@@ -1,0 +1,37 @@
+header {
+    font-family: 'Open Sans', sans-serif;
+    padding: 3rem 2rem;
+    color: white;
+    display: flex;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    width: 100%;
+}
+
+header ul {
+    text-align: right;
+}
+
+#Profile {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    border-radius: 100%;
+    z-index: 1;
+    position: absolute; /* Establece el posicionamiento absoluto */
+    left: 5%; /* Coloca el encabezado en el centro del contenedor */
+    transform: translate(-50%, -50%); /* Centra el encabezado vertical y horizontalmente */
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
