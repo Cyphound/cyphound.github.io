@@ -1,37 +1,64 @@
+/* Estilos generales del encabezado */
 header {
-    font-family: 'Open Sans', sans-serif;
-    padding: 3rem 2rem;
     color: white;
-    display: flex;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
     position: absolute;
-    top: 5rem;
+    top: 3.5rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba( 255, 255, 255, 0.2 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 6.5px );
-    -webkit-backdrop-filter: blur( 6.5px );
     width: 100%;
+    height: 5rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    z-index: 1;
+    padding: 1rem 0;
+    margin: 0;
+  }
+  
+  /* Estilos de la lista de navegación */
+  header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    text-decoration: none;
+    width: auto;
+} 
+  
+header ul li {
+  margin: 0 20px;
+  display: inline-block;
+  align-items: right;
+  position: relative;
+  margin-left: 2rem;
 }
+  
 
-header ul {
-    text-align: right;
-}
-
-#Profile {
+  
+  /* Estilos de la imagen de perfil */
+  #Profile {
     display: flex;
     justify-content: left;
     align-items: left;
     border-radius: 100%;
-    z-index: 1;
-    position: absolute; /* Establece el posicionamiento absoluto */
-    left: 5%; /* Coloca el encabezado en el centro del contenedor */
-    transform: translate(-50%, -50%); /* Centra el encabezado vertical y horizontalmente */
-    margin-left: 3rem;
-    margin-top: 3rem;
-}
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 2rem;
+  }
+  
+  /* Estilos del nombre de usuario */
+  #Name {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    position: absolute;
+    left: 6.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+  }
